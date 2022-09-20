@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
+
+:root {
+  --fel-color-primary: #4c0033;
+  --fel-color-secondary: #790252;
+  --fel-color-tertiary: #af0171;
+  --fel-color-extra: #e80f88;
+
+  --fel-fs-h1: 1.5rem;
+
+  --fel-fc-header: white;
+}
+
+.grid-container {
+  display: grid;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.content {
+  grid-template-areas:
+    "header header"
+    "aside main"
+    "footer footer";
+}
+
+.main-header {
+  background-color: var(--fel-color-primary);
+  color: var(--fel-fc-header);
+  font-size: var(--fel-fs-h1);
+  text-align: center;
+
+  grid-area: header;
+}
+
+.filter-sidebar {
+  flex-direction: column;
+
+  grid-area: aside;
+}
+
+main {
+  grid-area: main;
+}
+
+.main-footer {
+  flex-direction: row;
+
+  grid-area: footer;
+}
