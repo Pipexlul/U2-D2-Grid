@@ -32,11 +32,9 @@ body {
 
 .content {
   grid-template-areas:
-    "header header"
-    "aside main"
-    "footer footer";
-
-  grid-template-columns: 1fr 6fr;
+    "header header  header  header  header  header  header"
+    "aside  main    main    main    main    main    main"
+    "footer footer  footer  footer  footer  footer  footer";
 }
 
 .main-header {
